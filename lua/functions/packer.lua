@@ -14,7 +14,13 @@ function startup(use)
         requires = {{'nvim-lua/plenary.nvim'}}
     }
 
-    use ('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
+    -- material theme
+    use 'marko-cerovac/material.nvim'
+
+    -- treesitter
+    use('nvim-treesitter/nvim-treesitter', {
+        run = ':TSUpdate'
+    })
 end
 
 return require('packer').startup(startup)
