@@ -27,6 +27,9 @@ function startup(use)
 
     -- undotree
     use 'mbbill/undotree'
+
+    -- fugitive
+    use 'tpope/vim-fugitive'
 end
 
 return require('packer').startup(startup)
