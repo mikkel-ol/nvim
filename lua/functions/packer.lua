@@ -2,9 +2,12 @@
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
-function startup(use)
+local function startup(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
+
+    -- tokyonight theme
+    use 'folke/tokyonight.nvim'
 
     -- fzf
     use {
@@ -13,9 +16,6 @@ function startup(use)
         -- or                            , branch = '0.1.x',
         requires = {{'nvim-lua/plenary.nvim'}}
     }
-
-    -- material theme
-    use 'marko-cerovac/material.nvim'
 
     -- treesitter
     use('nvim-treesitter/nvim-treesitter', {
@@ -56,12 +56,12 @@ function startup(use)
             }
         end
     }
-    
+
     -- neo tree
     use {
   	"nvim-neo-tree/neo-tree.nvim",
     	branch = "v2.x",
-    	requires = { 
+    	requires = {
       		"nvim-lua/plenary.nvim",
       		"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
       		"MunifTanjim/nui.nvim",

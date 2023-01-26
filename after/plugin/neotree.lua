@@ -1,2 +1,3 @@
-vim.keymap.set("n", "<leader>nt", vim.cmd.Neotree) 
+vim.keymap.set("n", "<leader>nt", vim.cmd.Neotree)
+
 

@@ -1,3 +1,2 @@
-vim.cmd 'colorscheme material'
+vim.cmd 'colorscheme tokyonight'
 
-vim.g.material_style = 'darker'
