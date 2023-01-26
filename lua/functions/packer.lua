@@ -44,6 +44,9 @@ local function startup(use)
         {'rafamadriz/friendly-snippets'}}
     }
 
+    -- lsp eslint
+    use 'Muniftanjim/eslint.nvim'
+
     -- trouble
     use {
         "folke/trouble.nvim",
