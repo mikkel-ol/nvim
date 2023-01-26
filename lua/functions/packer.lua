@@ -57,8 +57,6 @@ local function startup(use)
         end
     }
 
-    use 'nvim-tree/nvim-web-devicons'
-
     -- neo tree
     use {
   	"nvim-neo-tree/neo-tree.nvim",
